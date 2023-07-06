@@ -154,7 +154,7 @@ async function connectToRedis() {
   }
 }
 
-// Usage example
+// Start the redis for backend
 (async () => {
   try {
     await connectToRedis();
@@ -164,7 +164,7 @@ async function connectToRedis() {
   }
 })();
 
-// Start the server
+// Start the server for frontend
 const port = 3000;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
